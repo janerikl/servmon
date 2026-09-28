@@ -1,0 +1,16 @@
+{
+  "name": "servermon",
+  "version": "1.0.0",
+  "description": "TUI to monitor and control local Node/Rails dev servers via tmux",
+  "type": "module",
+  "bin": {
+    "servmon": "./bin/servmon.js"
+  },
+  "scripts": {
+    "start": "node ./bin/servmon.js"
+  },
+  "dependencies": {
+    "blessed": "^0.1.81",
+    "js-yaml": "^4.1.0"
+  }
+}
