@@ -38,6 +38,9 @@ On first run, servmon scans `scan-root` for Node (`package.json`) and Rails (`Ge
 | `r` | Restart selected server |
 | `R` | Rescan projects, refresh registry |
 | `k` | Kill the process occupying the selected port |
+| `c` | Open project URL (`http://localhost:<port>`) in Chrome (requires a detected port) |
+| `o` | Open project folder in the file manager |
+| `v` | Open project folder in VS Code |
 | `F1` | Toggle help screen |
 | `q` / `Ctrl-C` | Quit |
 
