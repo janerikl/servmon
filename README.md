@@ -26,7 +26,7 @@ servmon [scan-root]
 
 - `scan-root` — directory to scan for projects (default: `~/Development`)
 
-On first run, servmon scans `scan-root` for Node (`package.json`) and Rails (`Gemfile`) projects up to 2 directories deep, guesses a start command and port for each, and writes the result to a registry file at `~/.config/servmon/servers.yaml`. You can hand-edit this file, or press `R` in the TUI to rescan.
+On first run, servmon scans `scan-root` for Node (`package.json`) and Rails (`Gemfile`) projects (every other top-level folder is also listed, without ports or server controls) up to 2 directories deep, guesses a start command and port for each, and writes the result to a registry file at `~/.config/servmon/servers.yaml`. You can hand-edit this file, or press `R` in the TUI to rescan.
 
 ### Keyboard commands
 
@@ -41,6 +41,8 @@ On first run, servmon scans `scan-root` for Node (`package.json`) and Rails (`Ge
 | `c` | Open project URL (`http://localhost:<port>`) in Chrome (requires a detected port) |
 | `o` | Open project folder in the file manager |
 | `v` | Open project folder in VS Code |
+| `b` | Open a bash terminal in the project folder |
+| `/` | Search projects by name or path (Enter keeps the filter, Esc clears it) |
 | `F1` | Toggle help screen |
 | `q` / `Ctrl-C` | Quit |
 
